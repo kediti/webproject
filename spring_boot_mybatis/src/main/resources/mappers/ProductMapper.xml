@@ -37,7 +37,7 @@
 	
 	<!-- 상품 정보 수정 : 수정된 정보 DB에 update (상품번호 변경 안함:기본키 변경하지 않음)  -->
 	<update id="updateProduct" parameterType="com.spring_boot_mybatis.project.model.ProductVO">
-		UPDATE product2 SET prdName=#{prdName}, prdPrice=#{prdPrice}, prdCompany=#{prdCompany},
+		UPDATE product SET prdName=#{prdName}, prdPrice=#{prdPrice}, prdCompany=#{prdCompany},
 							prdStock=#{prdStock}, prdDate=#{prdDate}
 		WHERE prdNo=#{prdNo}		
 	</update>
